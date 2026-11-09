@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | My Vlog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><a class="logo" href="index.html">My Vlog</a><nav><a href="index.html">Home</a><a href="blog.html" class="active">Blog</a><a href="about.html">About</a></nav></header>
+  <main>
+    <h1>The Blog</h1>
+    <p class="muted">Anyone can write a post and comment on posts below.</p>
+
+    <form id="post-form" class="card">
+      <h2>✍️ Write a post</h2>
+      <input id="p-author" placeholder="Your name (optional)" maxlength="40">
+      <input id="p-title" placeholder="Title" maxlength="100" required>
+      <textarea id="p-body" placeholder="What's on your mind?" rows="4" maxlength="2000" required></textarea>
+      <button class="btn" type="submit">Publish</button>
+      <p id="post-msg" class="muted"></p>
+    </form>
+
+    <section id="posts"></section>
+  </main>
+  <footer>© 2026 My Vlog · Final Project</footer>
+  <script src="main.js"></script>
+</body>
+</html>
